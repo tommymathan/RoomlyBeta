@@ -1,0 +1,47 @@
+<div ng-include src="'partials/nav.html'"></div>
+
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+
+            <div class="panel panel-success">
+                <!-- Default panel contents -->
+                <div class="panel-heading">Person</div>
+
+                <div class="row">
+
+                    <div class="col-md-10 col-md-offset-1">
+
+                        <form ng-submit="vm.createPerson()" role="form" class="form-inline">
+                            <fieldset>
+                                <legend>Add new Apartment/Room</legend>
+                                <div class="form-group">
+                                    <h3>Address</h3>
+                                    <input type="text" class="form-control" ng-model="vm.person.name" placeholder="Type in your address here" required>
+                                </div>
+                                <div class="form-group">
+                                    <h3>Monthly Rent</h3>
+                                    <input type="number" class="form-control" ng-model="vm.person.age" placeholder="Type in your monthly rent ere" required>
+                                </div>
+                              
+                            </fieldset>
+                            </br>
+                              <input type="submit" class="btn btn-primary" value="Add"/>
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <br>
+                <br>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
